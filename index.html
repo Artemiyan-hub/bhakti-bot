@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bhakti WebApp</title>
+  <script src="https://telegram.org/js/telegram-web-app.js"></script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f0f0f0;
+      padding: 2rem;
+      text-align: center;
+    }
+
+    h1 {
+      color: #333;
+    }
+
+    button {
+      padding: 1rem 2rem;
+      background: #0088cc;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      font-size: 1.1rem;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #006699;
+    }
+  </style>
+</head>
+<body>
+  <h1>Добро пожаловать в Bhakti WebApp 🙏</h1>
+  <p>Этот интерфейс открыт внутри Telegram-бота</p>
+  <button onclick="Telegram.WebApp.close()">Закрыть</button>
+
+  <script>
+    // Telegram WebApp инициализация
+    Telegram.WebApp.ready();
+    Telegram.WebApp.expand();  // Автоматически разворачивает окно WebApp на весь экран
+  </script>
+</body>
+</html>
